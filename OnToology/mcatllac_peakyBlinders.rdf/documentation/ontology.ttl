@@ -1,0 +1,892 @@
+@prefix : <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#> .
+
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders> rdf:type owl:Ontology ;
+                                                                   rdfs:comment "Peaky Blinders ontology. Autor: Marc Catllà." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation
+:hasLocation rdf:type owl:ObjectProperty ;
+             rdfs:domain :Sites ;
+             rdfs:range :Cities ;
+             rdfs:comment "Sites are located in one city." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason
+:inSeason rdf:type owl:ObjectProperty ;
+          rdfs:domain :Characters ;
+          rdfs:range :Seasons ;
+          rdfs:comment "Season in which character appeared." .
+
+
+###  https://dbpedia.org/page/Birmingham#availablePlatf
+<https://dbpedia.org/page/Birmingham#availablePlatf> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain :Seasons ;
+                                                     rdfs:range :TVPlatforms ;
+                                                     rdfs:comment "Platform where sere is available" .
+
+
+###  https://dbpedia.org/page/Birmingham#category
+<https://dbpedia.org/page/Birmingham#category> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain :Nominated ;
+                                               rdfs:range :Category ;
+                                               rdfs:comment "Category of the nomination award." .
+
+
+###  https://dbpedia.org/page/Birmingham#categoryW
+<https://dbpedia.org/page/Birmingham#categoryW> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf <https://dbpedia.org/page/Birmingham#category> ;
+                                                rdfs:domain :Won ;
+                                                rdfs:range :Category ;
+                                                rdfs:comment "Category of the won award." .
+
+
+###  https://dbpedia.org/page/Birmingham#createdBy
+<https://dbpedia.org/page/Birmingham#createdBy> rdf:type owl:ObjectProperty ;
+                                                rdfs:subPropertyOf owl:topObjectProperty ;
+                                                rdfs:domain <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+                                                rdfs:range :Creator ;
+                                                rdfs:comment "Creator of the serie." .
+
+
+###  https://dbpedia.org/page/Birmingham#hasDirector
+<https://dbpedia.org/page/Birmingham#hasDirector> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :Seasons ;
+                                                  rdfs:range :Director ;
+                                                  rdfs:comment "Every Season has at least one Director." .
+
+
+###  https://dbpedia.org/page/Birmingham#inYear
+<https://dbpedia.org/page/Birmingham#inYear> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :Seasons ;
+                                             rdfs:range :Year ;
+                                             rdfs:comment "Year that season is distributed." .
+
+
+###  https://dbpedia.org/page/Birmingham#interpretedBy
+<https://dbpedia.org/page/Birmingham#interpretedBy> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain :Characters ;
+                                                    rdfs:range <https://dbpedia.org/page/Birmingham#Cast> ;
+                                                    rdfs:comment "Actor or actress interpreted." .
+
+
+###  https://dbpedia.org/page/Birmingham#lang
+<https://dbpedia.org/page/Birmingham#lang> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain :Seasons ;
+                                           rdfs:range :Original ;
+                                           rdfs:comment "Original language." .
+
+
+###  https://dbpedia.org/page/Birmingham#longVOS
+<https://dbpedia.org/page/Birmingham#longVOS> rdf:type owl:ObjectProperty ;
+                                              rdfs:subPropertyOf <https://dbpedia.org/page/Birmingham#lang> ;
+                                              rdfs:domain :Seasons ;
+                                              rdfs:range :Doubled ;
+                                              rdfs:comment "Doubled languages for season." .
+
+
+###  https://dbpedia.org/page/Birmingham#needCostume
+<https://dbpedia.org/page/Birmingham#needCostume> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :Characters ;
+                                                  rdfs:range :Costume ;
+                                                  rdfs:comment "Actors need differetn costumes." .
+
+
+###  https://dbpedia.org/page/Birmingham#seasonSound
+<https://dbpedia.org/page/Birmingham#seasonSound> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :Soundtrack ;
+                                                  rdfs:range :Seasons ;
+                                                  rdfs:comment "Seasons with this songs." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://dbpedia.org/page/Birmingham#genere
+<https://dbpedia.org/page/Birmingham#genere> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain :Genere ;
+                                             rdfs:range [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:string ;
+                                                          owl:withRestrictions ( [ xsd:minInclusive "3"
+                                                                                 ]
+                                                                                 [ xsd:maxInclusive "12"
+                                                                                 ]
+                                                                               )
+                                                        ] .
+
+
+###  https://dbpedia.org/page/Birmingham#year
+<https://dbpedia.org/page/Birmingham#year> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :Year ;
+                                           rdfs:range [ rdf:type rdfs:Datatype ;
+                                                        owl:onDatatype xsd:integer ;
+                                                        owl:withRestrictions ( [ xsd:minInclusive 1950
+                                                                               ]
+                                                                               [ xsd:maxInclusive 2021
+                                                                               ]
+                                                                             )
+                                                      ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf <https://dbpedia.org/page/Birmingham#Cast> ;
+       owl:disjointWith <https://dbpedia.org/page/Birmingham#Actress> ;
+       rdfs:comment "Actors of the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards
+:Awards rdf:type owl:Class ;
+        rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+        rdfs:comment "All won and nominated awards." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category
+:Category rdf:type owl:Class ;
+          rdfs:subClassOf :Awards ;
+          rdfs:comment "Category of the award." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters
+:Characters rdf:type owl:Class ;
+            rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :inSeason ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Seasons
+                            ] ;
+            rdfs:comment "Cast of the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities
+:Cities rdf:type owl:Class ;
+        rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+        rdfs:comment "Filming cities" .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume
+:Costume rdf:type owl:Class ;
+         rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+         rdfs:comment "Differents costumes and dresses used during the filming." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator
+:Creator rdf:type owl:Class ;
+         rdfs:subClassOf :Person ;
+         rdfs:comment "Creator of the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "Directors of the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor
+:Distributor rdf:type owl:Class ;
+             rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+             rdfs:comment "Companies that dstribute the serie around the world." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled
+:Doubled rdf:type owl:Class ;
+         rdfs:subClassOf :Language ;
+         rdfs:comment "Languages doubled." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female
+:Female rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        owl:disjointWith :Male ;
+        rdfs:comment "Females related with the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere
+:Genere rdf:type owl:Class ;
+        rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+        rdfs:comment "Most common generes in episodes." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest
+:Guest rdf:type owl:Class ;
+       rdfs:subClassOf :Characters ;
+       owl:disjointWith :Main ,
+                        :Secondary ;
+       rdfs:comment "Characters that appears one chapter." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language
+:Language rdf:type owl:Class ;
+          rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+          rdfs:comment "Languages availables." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main
+:Main rdf:type owl:Class ;
+      rdfs:subClassOf :Characters ;
+      owl:disjointWith :Secondary ;
+      rdfs:comment "Main characters." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male
+:Male rdf:type owl:Class ;
+      rdfs:subClassOf :Person ;
+      rdfs:comment "Males related with the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated
+:Nominated rdf:type owl:Class ;
+           rdfs:subClassOf :Awards ;
+           rdfs:comment "Award nomination." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original
+:Original rdf:type owl:Class ;
+          rdfs:subClassOf :Language ;
+          rdfs:comment "Original Language." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+        rdfs:comment "People who participates." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "Producer of the serie." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons
+:Seasons rdf:type owl:Class ;
+         rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://dbpedia.org/page/Birmingham#hasDirector> ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Director
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://dbpedia.org/page/Birmingham#inYear> ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Year
+                         ] ;
+         rdfs:comment "Serie seasons." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary
+:Secondary rdf:type owl:Class ;
+           rdfs:subClassOf :Characters ;
+           rdfs:comment "Secondary characters." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites
+:Sites rdf:type owl:Class ;
+       rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocation ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onClass :Cities
+                       ] ;
+       rdfs:comment "Main filming sites." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack
+:Soundtrack rdf:type owl:Class ;
+            rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://dbpedia.org/page/Birmingham#seasonSound> ;
+                              owl:someValuesFrom :Seasons
+                            ] ;
+            rdfs:comment "All serie songs." ;
+            rdfs:sameAs "https://dbpedia.org/page/Soundtrack" .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms
+:TVPlatforms rdf:type owl:Class ;
+             rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+             rdfs:comment "Platforms where serie is available." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won
+:Won rdf:type owl:Class ;
+     rdfs:subClassOf :Awards ;
+     rdfs:comment "Award won." .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year
+:Year rdf:type owl:Class ;
+      rdfs:subClassOf <https://dbpedia.org/page/Birmingham#peaky_blinders> ;
+      rdfs:comment "Years of seasons and Awards" .
+
+
+###  https://dbpedia.org/page/Birmingham#Actress
+<https://dbpedia.org/page/Birmingham#Actress> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://dbpedia.org/page/Birmingham#Cast> ;
+                                              rdfs:comment "Actresses of the serie" .
+
+
+###  https://dbpedia.org/page/Birmingham#Cast
+<https://dbpedia.org/page/Birmingham#Cast> rdf:type owl:Class ;
+                                           rdfs:subClassOf :Person ;
+                                           rdfs:comment "Cast of the serie." .
+
+
+###  https://dbpedia.org/page/Birmingham#peaky_blinders
+<https://dbpedia.org/page/Birmingham#peaky_blinders> rdf:type owl:Class ;
+                                                     rdfs:comment "Peaky Blinders Class" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon
+:Alfie_Solomon rdf:type owl:NamedIndividual ,
+                        :Secondary ;
+               :inSeason :Season1 ,
+                         :Season2 ,
+                         :Season3 .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon
+:Amazon rdf:type owl:NamedIndividual ,
+                 :TVPlatforms .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne
+:Anthony_Byrne rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Arthur_Shelby
+:Arthur_Shelby rdf:type owl:NamedIndividual ,
+                        :Main .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA
+:BAFTA rdf:type owl:NamedIndividual ,
+                :Won ;
+       <https://dbpedia.org/page/Birmingham#categoryW> :Best_director .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BBC
+:BBC rdf:type owl:NamedIndividual ,
+              :Distributor .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume
+:Best_costume rdf:type owl:NamedIndividual ,
+                       :Category .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director
+:Best_director rdf:type owl:NamedIndividual ,
+                        :Category .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham
+:Birmingham rdf:type owl:NamedIndividual ,
+                     :Cities .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Catalan
+:Catalan rdf:type owl:NamedIndividual ,
+                  :Doubled .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy
+:Cillian_Murphy rdf:type owl:NamedIndividual ,
+                         :Actor .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy
+:Colm_McCarthy rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey
+:David_Caffrey rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Drama
+:Drama rdf:type owl:NamedIndividual ,
+                :Genere .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English
+:English rdf:type owl:NamedIndividual ,
+                  :Original .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Epoca
+:Epoca rdf:type owl:NamedIndividual ,
+                :Genere .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Factory
+:Factory rdf:type owl:NamedIndividual ,
+                  :Sites .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Freddie_Thorne
+:Freddie_Thorne rdf:type owl:NamedIndividual ,
+                         :Secondary .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French
+:French rdf:type owl:NamedIndividual ,
+                 :Doubled .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub
+:Garrison_Pub rdf:type owl:NamedIndividual ,
+                       :Sites ;
+              :hasLocation :Birmingham .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat
+:Hat rdf:type owl:NamedIndividual ,
+              :Costume .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory
+:Helen_McCrory rdf:type owl:NamedIndividual ,
+                        <https://dbpedia.org/page/Birmingham#Actress> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hippodrome
+:Hippodrome rdf:type owl:NamedIndividual ,
+                     :Sites .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA
+:IFTA rdf:type owl:NamedIndividual ,
+               :Nominated ;
+      <https://dbpedia.org/page/Birmingham#category> :Best_costume .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg
+:Iddo_Goldberg rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden
+:Katie_Swiden rdf:type owl:NamedIndividual ,
+                       :Female ,
+                       :Producer .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Liss_Shelby
+:Liss_Shelby rdf:type owl:NamedIndividual ,
+                      :Guest .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London
+:London rdf:type owl:NamedIndividual ,
+                 :Cities ;
+        rdfs:sameAs "https://dbpedia.org/page/London" .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Natasha_Okeefe
+:Natasha_Okeefe rdf:type owl:NamedIndividual ,
+                         <https://dbpedia.org/page/Birmingham#Actress> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell
+:Neil_Maskell rdf:type owl:NamedIndividual ,
+                       :Actor ,
+                       :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix
+:Netflix rdf:type owl:NamedIndividual ,
+                  :Distributor ,
+                  :TVPlatforms ;
+         rdfs:sameAs "https://dbpedia.org/page/Netflix" .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst
+:Otto_Bathurst rdf:type owl:NamedIndividual ,
+                        :Director ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat
+:Overcoat rdf:type owl:NamedIndividual ,
+                   :Costume .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Paul_Anderson
+:Paul_Anderson rdf:type owl:NamedIndividual ,
+                        :Actor .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly
+:Polly rdf:type owl:NamedIndividual ,
+                :Main ;
+       <https://dbpedia.org/page/Birmingham#interpretedBy> :Helen_McCrory .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand
+:Red_Right_Hand rdf:type owl:NamedIndividual ,
+                         :Soundtrack ;
+                <https://dbpedia.org/page/Birmingham#seasonSound> :Season1 ,
+                                                                  :Season2 .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1
+:Season1 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#availablePlatf> :Amazon ,
+                                                              :Netflix ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :Otto_Bathurst ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013> ;
+         <https://dbpedia.org/page/Birmingham#lang> :English ,
+                                                    :French ,
+                                                    :Spanish .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2
+:Season2 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :Colm_McCarthy ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3
+:Season3 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :Tim_Mielants ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4
+:Season4 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :David_Caffrey ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5
+:Season5 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :Anthony_Byrne ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019> .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6
+:Season6 rdf:type owl:NamedIndividual ,
+                  :Seasons ;
+         <https://dbpedia.org/page/Birmingham#availablePlatf> :Amazon ;
+         <https://dbpedia.org/page/Birmingham#hasDirector> :Anthony_Byrne ;
+         <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022> ;
+         <https://dbpedia.org/page/Birmingham#lang> :English .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish
+:Spanish rdf:type owl:NamedIndividual ,
+                  :Doubled .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight
+:Steven_Knight rdf:type owl:NamedIndividual ,
+                        :Creator ,
+                        :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby
+:Thomas_Shelby rdf:type owl:NamedIndividual ,
+                        :Main ;
+               :inSeason :Season1 ,
+                         :Season2 ,
+                         :Season3 ;
+               <https://dbpedia.org/page/Birmingham#interpretedBy> :Cillian_Murphy ;
+               <https://dbpedia.org/page/Birmingham#needCostume> :Hat ,
+                                                                 :Overcoat .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants
+:Tim_Mielants rdf:type owl:NamedIndividual ,
+                       :Director ,
+                       :Male .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tom_Hardy
+:Tom_Hardy rdf:type owl:NamedIndividual ,
+                    :Actor .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Turkish
+:Turkish rdf:type owl:NamedIndividual ,
+                  :Doubled .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill
+:Winston_Churchill rdf:type owl:NamedIndividual ,
+                            :Guest ;
+                   rdfs:sameAs "https://dbpedia.org/page/Winston_Churchill" .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+###  http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022> rdf:type owl:NamedIndividual ,
+                                                                                :Year .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#m> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Male ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Secondary ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :inSeason ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 2 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Main ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Characters ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#interpretedBy> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Male ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Characters ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#interpretedBy> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Birmingham#Actress> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Female ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Characters ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :inSeason ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#inYear> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Characters ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :inSeason ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#endsWith> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <urn:swrl:var#s> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first "1" ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Costume ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :Hat
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Birmingham#Actress> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Female ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
