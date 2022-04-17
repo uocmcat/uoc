@@ -1,0 +1,1412 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid5"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1950"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#hasDirector"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#inYear"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#seasonSound"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid29"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid23"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid31"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason"
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@value" : "12"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    }, {
+      "@id" : "_:genid36"
+    }, {
+      "@id" : "_:genid34"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid34",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#interpretedBy"
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid43"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid49"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid43",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#interpretedBy"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@value" : "3"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid54"
+    }, {
+      "@id" : "_:genid52"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid56"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason"
+  } ]
+}, {
+  "@id" : "_:genid54",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#inYear"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid65"
+    }, {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid59"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid67"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "urn:swrl:var#s"
+    }, {
+      "@value" : "1"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#endsWith"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid10"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#s"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#c"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume"
+  } ]
+}, {
+  "@id" : "_:genid68",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid70"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid72"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid70",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#m"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+  } ]
+}, {
+  "@id" : "_:genid72",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#m"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2021"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Peaky Blinders ontology. Autor: Marc Catllà."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actors of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Cast"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Arthur_Shelby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "All won and nominated awards."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won"
+  } ],
+  "https://dbpedia.org/page/Birmingham#categoryW" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BBC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Catalan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Category of the award."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cast of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  }, {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Filming cities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Differents costumes and dresses used during the filming."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Creator of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Directors of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Companies that dstribute the serie around the world."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Languages doubled."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Drama",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Epoca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Factory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Females related with the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Freddie_Thorne",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Most common generes in episodes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that appears one chapter."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hippodrome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated"
+  } ],
+  "https://dbpedia.org/page/Birmingham#category" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Languages availables."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Liss_Shelby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/London"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main characters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Males related with the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Natasha_Okeefe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Netflix"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Award nomination."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Original Language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Paul_Anderson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People who participates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+  } ],
+  "https://dbpedia.org/page/Birmingham#interpretedBy" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Producer of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack"
+  } ],
+  "https://dbpedia.org/page/Birmingham#seasonSound" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#availablePlatf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013"
+  } ],
+  "https://dbpedia.org/page/Birmingham#lang" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "https://dbpedia.org/page/Birmingham#availablePlatf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon"
+  } ],
+  "https://dbpedia.org/page/Birmingham#hasDirector" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne"
+  } ],
+  "https://dbpedia.org/page/Birmingham#inYear" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022"
+  } ],
+  "https://dbpedia.org/page/Birmingham#lang" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Serie seasons."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Secondary characters."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Main filming sites."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "All serie songs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Soundtrack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  }, {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Platforms where serie is available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+  } ],
+  "https://dbpedia.org/page/Birmingham#interpretedBy" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy"
+  } ],
+  "https://dbpedia.org/page/Birmingham#needCostume" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  }, {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tom_Hardy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Turkish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Winston_Churchill"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Award won."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Years of seasons and Awards"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Sites are located in one city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Season in which character appeared."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#endsWith",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#Actress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actresses of the serie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Cast"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#Cast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cast of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#availablePlatf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Platform where sere is available"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Category of the nomination award."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#categoryW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Category of the won award."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#category"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#createdBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Creator of the serie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#genere",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#hasDirector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Every Season has at least one Director."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#inYear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Year that season is distributed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#interpretedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actor or actress interpreted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#Cast"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#lang",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Original language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#longVOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Doubled languages for season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://dbpedia.org/page/Birmingham#lang"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#needCostume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actors need differetn costumes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Peaky Blinders Class"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#seasonSound",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seasons with this songs."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+  } ]
+}, {
+  "@id" : "https://dbpedia.org/page/Birmingham#year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "urn:swrl:var#a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#c",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#m",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#s",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+} ]

@@ -1,0 +1,803 @@
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders> <http://www.w3.org/2000/01/rdf-schema#comment> "Peaky Blinders ontology. Autor: Marc Catllà." .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Sites are located in one city." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Season in which character appeared." .
+# 
+# https://dbpedia.org/page/Birmingham#availablePlatf
+<https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> .
+<https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform where sere is available" .
+# 
+# https://dbpedia.org/page/Birmingham#category
+<https://dbpedia.org/page/Birmingham#category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#category> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated> .
+<https://dbpedia.org/page/Birmingham#category> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> .
+<https://dbpedia.org/page/Birmingham#category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the nomination award." .
+# 
+# https://dbpedia.org/page/Birmingham#categoryW
+<https://dbpedia.org/page/Birmingham#categoryW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#categoryW> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://dbpedia.org/page/Birmingham#category> .
+<https://dbpedia.org/page/Birmingham#categoryW> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won> .
+<https://dbpedia.org/page/Birmingham#categoryW> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> .
+<https://dbpedia.org/page/Birmingham#categoryW> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the won award." .
+# 
+# https://dbpedia.org/page/Birmingham#createdBy
+<https://dbpedia.org/page/Birmingham#createdBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#createdBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://dbpedia.org/page/Birmingham#createdBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<https://dbpedia.org/page/Birmingham#createdBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator> .
+<https://dbpedia.org/page/Birmingham#createdBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Creator of the serie." .
+# 
+# https://dbpedia.org/page/Birmingham#hasDirector
+<https://dbpedia.org/page/Birmingham#hasDirector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#hasDirector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#hasDirector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<https://dbpedia.org/page/Birmingham#hasDirector> <http://www.w3.org/2000/01/rdf-schema#comment> "Every Season has at least one Director." .
+# 
+# https://dbpedia.org/page/Birmingham#inYear
+<https://dbpedia.org/page/Birmingham#inYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#inYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#inYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+<https://dbpedia.org/page/Birmingham#inYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Year that season is distributed." .
+# 
+# https://dbpedia.org/page/Birmingham#interpretedBy
+<https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/page/Birmingham#Cast> .
+<https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Actor or actress interpreted." .
+# 
+# https://dbpedia.org/page/Birmingham#lang
+<https://dbpedia.org/page/Birmingham#lang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#lang> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#lang> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original> .
+<https://dbpedia.org/page/Birmingham#lang> <http://www.w3.org/2000/01/rdf-schema#comment> "Original language." .
+# 
+# https://dbpedia.org/page/Birmingham#longVOS
+<https://dbpedia.org/page/Birmingham#longVOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#longVOS> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://dbpedia.org/page/Birmingham#lang> .
+<https://dbpedia.org/page/Birmingham#longVOS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#longVOS> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> .
+<https://dbpedia.org/page/Birmingham#longVOS> <http://www.w3.org/2000/01/rdf-schema#comment> "Doubled languages for season." .
+# 
+# https://dbpedia.org/page/Birmingham#needCostume
+<https://dbpedia.org/page/Birmingham#needCostume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#needCostume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<https://dbpedia.org/page/Birmingham#needCostume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> .
+<https://dbpedia.org/page/Birmingham#needCostume> <http://www.w3.org/2000/01/rdf-schema#comment> "Actors need differetn costumes." .
+# 
+# https://dbpedia.org/page/Birmingham#seasonSound
+<https://dbpedia.org/page/Birmingham#seasonSound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://dbpedia.org/page/Birmingham#seasonSound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> .
+<https://dbpedia.org/page/Birmingham#seasonSound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<https://dbpedia.org/page/Birmingham#seasonSound> <http://www.w3.org/2000/01/rdf-schema#comment> "Seasons with this songs." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://dbpedia.org/page/Birmingham#genere
+<https://dbpedia.org/page/Birmingham#genere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/Birmingham#genere> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> .
+<https://dbpedia.org/page/Birmingham#genere> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "12" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "3" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# https://dbpedia.org/page/Birmingham#year
+<https://dbpedia.org/page/Birmingham#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://dbpedia.org/page/Birmingham#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+<https://dbpedia.org/page/Birmingham#year> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/2001/XMLSchema#maxInclusive> "2021"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2001/XMLSchema#minInclusive> "1950"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#Cast> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> <http://www.w3.org/2002/07/owl#disjointWith> <https://dbpedia.org/page/Birmingham#Actress> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Actors of the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> <http://www.w3.org/2000/01/rdf-schema#comment> "All won and nominated awards." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of the award." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+_:genid11 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> <http://www.w3.org/2000/01/rdf-schema#comment> "Cast of the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> <http://www.w3.org/2000/01/rdf-schema#comment> "Filming cities" .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> <http://www.w3.org/2000/01/rdf-schema#comment> "Differents costumes and dresses used during the filming." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator> <http://www.w3.org/2000/01/rdf-schema#comment> "Creator of the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Directors of the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor> <http://www.w3.org/2000/01/rdf-schema#comment> "Companies that dstribute the serie around the world." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> <http://www.w3.org/2000/01/rdf-schema#comment> "Languages doubled." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> <http://www.w3.org/2000/01/rdf-schema#comment> "Females related with the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> <http://www.w3.org/2000/01/rdf-schema#comment> "Most common generes in episodes." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> <http://www.w3.org/2000/01/rdf-schema#comment> "Characters that appears one chapter." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language> <http://www.w3.org/2000/01/rdf-schema#comment> "Languages availables." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> <http://www.w3.org/2000/01/rdf-schema#comment> "Main characters." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> <http://www.w3.org/2000/01/rdf-schema#comment> "Males related with the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated> <http://www.w3.org/2000/01/rdf-schema#comment> "Award nomination." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original> <http://www.w3.org/2000/01/rdf-schema#comment> "Original Language." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "People who participates." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Producer of the serie." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/page/Birmingham#hasDirector> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+_:genid13 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/page/Birmingham#inYear> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> <http://www.w3.org/2000/01/rdf-schema#comment> "Serie seasons." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> <http://www.w3.org/2000/01/rdf-schema#comment> "Secondary characters." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> .
+_:genid14 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> <http://www.w3.org/2000/01/rdf-schema#comment> "Main filming sites." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <https://dbpedia.org/page/Birmingham#seasonSound> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#comment> "All serie songs." .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Soundtrack" .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> <http://www.w3.org/2000/01/rdf-schema#comment> "Platforms where serie is available." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won> <http://www.w3.org/2000/01/rdf-schema#comment> "Award won." .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#peaky_blinders> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Years of seasons and Awards" .
+# 
+# https://dbpedia.org/page/Birmingham#Actress
+<https://dbpedia.org/page/Birmingham#Actress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Birmingham#Actress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://dbpedia.org/page/Birmingham#Cast> .
+<https://dbpedia.org/page/Birmingham#Actress> <http://www.w3.org/2000/01/rdf-schema#comment> "Actresses of the serie" .
+# 
+# https://dbpedia.org/page/Birmingham#Cast
+<https://dbpedia.org/page/Birmingham#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Birmingham#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person> .
+<https://dbpedia.org/page/Birmingham#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "Cast of the serie." .
+# 
+# https://dbpedia.org/page/Birmingham#peaky_blinders
+<https://dbpedia.org/page/Birmingham#peaky_blinders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://dbpedia.org/page/Birmingham#peaky_blinders> <http://www.w3.org/2000/01/rdf-schema#comment> "Peaky Blinders Class" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Alfie_Solomon> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Arthur_Shelby
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Arthur_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Arthur_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BAFTA> <https://dbpedia.org/page/Birmingham#categoryW> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BBC
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#BBC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Catalan
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Catalan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Catalan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Drama
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Drama> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Epoca
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Epoca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Epoca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Factory
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Factory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Factory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Freddie_Thorne
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Freddie_Thorne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Freddie_Thorne> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Garrison_Pub> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Birmingham> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Birmingham#Actress> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hippodrome
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hippodrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hippodrome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#IFTA> <https://dbpedia.org/page/Birmingham#category> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Best_costume> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Iddo_Goldberg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Katie_Swiden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Liss_Shelby
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Liss_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Liss_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#London> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/London" .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Natasha_Okeefe
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Natasha_Okeefe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Natasha_Okeefe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://dbpedia.org/page/Birmingham#Actress> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Neil_Maskell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Netflix" .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Paul_Anderson
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Paul_Anderson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Paul_Anderson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Polly> <https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Helen_McCrory> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand> <https://dbpedia.org/page/Birmingham#seasonSound> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Red_Right_Hand> <https://dbpedia.org/page/Birmingham#seasonSound> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Netflix> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Otto_Bathurst> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#lang> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#lang> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#French> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> <https://dbpedia.org/page/Birmingham#lang> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Colm_McCarthy> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#David_Caffrey> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season4> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season5> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <https://dbpedia.org/page/Birmingham#availablePlatf> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Amazon> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <https://dbpedia.org/page/Birmingham#hasDirector> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Anthony_Byrne> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <https://dbpedia.org/page/Birmingham#inYear> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season6> <https://dbpedia.org/page/Birmingham#lang> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#English> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Spanish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Steven_Knight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season1> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season2> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Season3> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <https://dbpedia.org/page/Birmingham#interpretedBy> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cillian_Murphy> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <https://dbpedia.org/page/Birmingham#needCostume> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Thomas_Shelby> <https://dbpedia.org/page/Birmingham#needCostume> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Overcoat> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tim_Mielants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tom_Hardy
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tom_Hardy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Tom_Hardy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Turkish
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Turkish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Turkish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Winston_Churchill> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Winston_Churchill" .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2013> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2017> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2019> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#2022> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid16 <http://www.w3.org/2003/11/swrl#body> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/2003/11/swrl#head> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid21 <http://www.w3.org/2003/11/swrl#body> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#arguments> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/2003/11/swrl#head> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid31 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid32 <http://www.w3.org/2003/11/swrl#body> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid34 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid36 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid36 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#interpretedBy> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid38 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/2003/11/swrl#head> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid40 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid41 <http://www.w3.org/2003/11/swrl#body> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#a> .
+_:genid43 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Birmingham#Actress> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#a> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#interpretedBy> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid41 <http://www.w3.org/2003/11/swrl#head> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid50 <http://www.w3.org/2003/11/swrl#body> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid52 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid54 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/2003/11/swrl#head> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#s> .
+_:genid56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://dbpedia.org/page/Birmingham#inYear> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid57 <http://www.w3.org/2003/11/swrl#body> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid59 .
+_:genid59 <http://www.w3.org/2003/11/swrl#arguments> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "1" .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <urn:swrl:var#s> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#endsWith> .
+<http://www.w3.org/2003/11/swrlb#endsWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#s> .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid63 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid65 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/2003/11/swrl#head> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Hat> .
+_:genid67 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid68 <http://www.w3.org/2003/11/swrl#body> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m> .
+_:genid70 <http://www.w3.org/2003/11/swrl#classPredicate> <https://dbpedia.org/page/Birmingham#Actress> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/2003/11/swrl#head> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#m> .
+_:genid72 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

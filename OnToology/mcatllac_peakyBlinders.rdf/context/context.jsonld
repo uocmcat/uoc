@@ -1,0 +1,162 @@
+{
+  "@context" : {
+    "Creator" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Creator"
+    },
+    "lang" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#lang",
+      "@type" : "@id"
+    },
+    "Main" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Main"
+    },
+    "Doubled" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Doubled"
+    },
+    "Category" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Category"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Director"
+    },
+    "Cast" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#Cast"
+    },
+    "Sites" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Sites"
+    },
+    "Actress" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#Actress"
+    },
+    "Characters" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Characters"
+    },
+    "Soundtrack" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Soundtrack"
+    },
+    "seasonSound" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#seasonSound",
+      "@type" : "@id"
+    },
+    "Nominated" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Nominated"
+    },
+    "inSeason" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#inSeason",
+      "@type" : "@id"
+    },
+    "availablePlatf" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#availablePlatf",
+      "@type" : "@id"
+    },
+    "Secondary" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Secondary"
+    },
+    "Genere" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Genere"
+    },
+    "interpretedBy" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#interpretedBy",
+      "@type" : "@id"
+    },
+    "createdBy" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#createdBy",
+      "@type" : "@id"
+    },
+    "categoryW" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#categoryW",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Person"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Actor"
+    },
+    "Cities" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Cities"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Producer"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Male" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Male"
+    },
+    "genere" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#genere"
+    },
+    "Won" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Won"
+    },
+    "needCostume" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#needCostume",
+      "@type" : "@id"
+    },
+    "Female" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Female"
+    },
+    "peaky_blinders" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#peaky_blinders"
+    },
+    "Awards" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Awards"
+    },
+    "year" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#year"
+    },
+    "longVOS" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#longVOS",
+      "@type" : "@id"
+    },
+    "Year" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Year"
+    },
+    "Seasons" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Seasons"
+    },
+    "Distributor" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Distributor"
+    },
+    "inYear" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#inYear",
+      "@type" : "@id"
+    },
+    "hasDirector" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#hasDirector",
+      "@type" : "@id"
+    },
+    "Language" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Language"
+    },
+    "category" : {
+      "@id" : "https://dbpedia.org/page/Birmingham#category",
+      "@type" : "@id"
+    },
+    "Original" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Original"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Costume" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Costume"
+    },
+    "TVPlatforms" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#TVPlatforms"
+    },
+    "hasLocation" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#hasLocation",
+      "@type" : "@id"
+    },
+    "Guest" : {
+      "@id" : "http://www.semanticweb.org/marc/ontologies/2022/3/peakyblinders#Guest"
+    }
+  }
+}
